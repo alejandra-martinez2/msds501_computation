@@ -37,7 +37,7 @@ for i, r in enumerate(readings):
         print(f'Reading [{i}]: {temp}')
         valid.append(temp)
     except ValueError:
-        print(f"[index] {i} Skipped bad reading: {r}")
+        print(f"[index] {i} Skipped bad reading: '{r}'")
 
 average = sum(valid) / len(valid)
 print(f'Average of valid readings: {round(average, 2)}')
